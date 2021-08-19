@@ -32,18 +32,17 @@ function Index( {actList ,setActList}) {
                      
                      <span className="checkmark"></span>
                      <label>           
-                 <span className="close" onClick= {
+                 <span className="close"onClick= {
                      (s)=>{
                         let copy = [...actList]  // Create a copy
-                        copy=   copy.filter((value)=>{ 
-                            return value.id !== s.id;
+                        copy = copy.filter((value)=>{ 
+                            return value.id !== s.target.id;
                         });
                         setActList(copy)
-                        console.log(s.target.id)
 
-                        
 
-                     
+        
+                         
                      }
 
 
